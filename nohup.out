@@ -1,0 +1,14 @@
+[2016-04-20 16:54:23 +0000] [14789] [INFO] Starting gunicorn 19.4.5
+[2016-04-20 16:54:23 +0000] [14789] [INFO] Listening at: http://127.0.0.1:8000 (14789)
+[2016-04-20 16:54:23 +0000] [14789] [INFO] Using worker: sync
+[2016-04-20 16:54:23 +0000] [14794] [INFO] Booting worker with pid: 14794
+[2016-04-20 16:54:50 +0000] [14794] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/root/myproject/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/root/myproject/venv/local/lib/python2.7/site-packages/gunicorn/workers/sync.py", line 171, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+TypeError: __call__() takes at most 2 arguments (3 given)
+[2016-04-20 16:56:43 +0000] [14789] [INFO] Handling signal: term
+[2016-04-20 16:56:43 +0000] [14794] [INFO] Worker exiting (pid: 14794)
+[2016-04-20 16:56:43 +0000] [14789] [INFO] Shutting down: Master
