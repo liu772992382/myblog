@@ -1,7 +1,6 @@
 #coding=utf-8
 #!/usr/bin/env python
 from flask import Flask,render_template
-from flask.ext.script import Manager, Server
 
 app = Flask(__name__)
 
