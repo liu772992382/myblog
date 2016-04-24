@@ -1,0 +1,131 @@
+.jumbotron{
+	background-color: #f4645f !important;
+	color: white;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+body{
+	background-color: #DDDDDD;
+}
+
+div.nav a{
+	color: white;
+	display: inline-block;
+}
+
+.nav-pills a{
+	color: white !important;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+	background-color: rgb(234, 10, 29);
+}
+div.post {
+    background: #f8f8f8;
+    margin-bottom: 30px;
+    padding: 20px 35px;
+    box-shadow: 0 1px 4px #aaa;
+    overflow: hidden;
+}
+
+.user-info {
+    padding: 20px;
+    padding-top: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 4px #aaa;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.card ul li {
+    float: left;
+    width: 33%;
+    padding: 8px 0;
+    border-left: 1px #eee solid;
+}
+
+.card img {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.main-content{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.centered-pills {
+    text-align: center
+}
+.centered-pills ul.nav-pills {
+    display: inline-block
+}
+.centered-pills li {
+    display: inline
+}
+.centered-pills a {
+    float: left
+}
+
+.card ul {
+    list-style-type: none;
+    border-top: 1px #eee solid;
+    margin: 0;
+    padding: 0;
+}
+
+.card .avater {
+    display: inline-block;
+    margin-top: -40px;
+    position: relative;
+    background: #fff;
+    box-shadow: 0 1px #ccc;
+    border-radius: 100%;
+    border: 3px #fff solid;
+    overflow: hidden;
+}
+
+.card .header {
+    background-position: top left;
+    background-image: url(../pics/card.png);
+    background-size: cover;
+    height: 148px;
+}
+
+* html .centered-pills ul.nav-pills, *+html .centered-pills ul.nav-pills {
+    display: inline
+}
+
+div.post{
+	text-align: center;
+}
+
+div.post p{
+	font-size: 2.0rem;
+}
+
+div.post .featured {
+    display: block;
+    float: right;
+    width: 0;
+    height: 0;
+    border-right: 20px #f4645f solid;
+    border-bottom: 20px solid transparent;
+    margin-top: -20px;
+    margin-right: -38px;
+}
+
+.card {
+    border-radius: 3px;
+    background: #fff;
+    color: #555;
+    text-align: center;
+    box-shadow: 0px 1px 2px #aaa;
+    margin-top: 12px;
+}
