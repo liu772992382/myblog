@@ -20,8 +20,14 @@ div.nav a{
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
-	background-color: rgb(234, 10, 29);
+	background-color: rgb(234, 10, 29) !important;
 }
+
+
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: rgb(234, 10, 29) !important;
+}
+
 div.post {
     background: #f8f8f8;
     margin-bottom: 30px;
