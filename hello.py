@@ -8,5 +8,9 @@ app = Flask(__name__)
 def hello_world():
 	return render_template('welcome.html', title="Welcome")
 
+@app.route('/edit')
+def edit():
+	return render_template('edit.html',title="edit")
+
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
