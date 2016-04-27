@@ -63,4 +63,4 @@ def about():
 	return render_template('about.html',Length=atiLength)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=8000)
