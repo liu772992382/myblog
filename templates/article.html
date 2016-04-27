@@ -1,8 +1,9 @@
 {% extends "base.html" %}
-{% block title %}Index{% endblock %}
+{% block title %}article{% endblock %}
 {% block head %}
 {% endblock %}
 {% block content %}
+
 <link href="../static/css/index.css" rel="stylesheet">
   <div class="jumbotron index">
     <h1 class="title">Hello, world!</h1>
@@ -19,21 +20,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9 col-sm-12 main-content">
-          {% for i in articles.items %}
           <div class="post">
             <a href="#" class="featured "></a>
             <center>
-              <h2 ><a href="/article/{{i.Id}}">{{i.Title}}</a></h2>
-              <small >From:Gru {{i.SubTime}}</small>
+              <h2 ><a href="/">{{article.Title}}</a></h2>
+              <small >From:Gru {{article.SubTime}}</small>
             </center>
-            <p>
-              {{i.Digest}}
-            </p>
             <hr>
-            Tag:{{i.Tag}}
+            <p>
+              {{article.Content|safe}}
+            </p>
           </div>
-        {% endfor %}
-      </div>
+        </div>
         <div class="col-md-3 visible-lg visible-md">
           <div class="user-info">
             <div class="card">
@@ -59,4 +57,5 @@
   <h3 >Gru's Blog</h3>
     &copy; Copyright 2016 by <a href="http://imgru.site">Gru</a>
   </div>
+
 {% endblock %}

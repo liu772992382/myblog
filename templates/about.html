@@ -9,8 +9,8 @@
     <p>Gru</p>
     <div class="centered-pills">
       <ul class="nav nav-pills">
-        <li role="presentation" class="active"><a href="#">Articles<span class="badge">{{Length}}</span></a></li>
-        <li role="presentation"><a href="/about">About</a></li>
+        <li role="presentation" ><a href="/">Articles<span class="badge">{{Length}}</span></a></li>
+        <li role="presentation" class="active"><a href="/about">About</a></li>
         <li role="presentation"><a href="/login">Admin</a></li>
       </ul>
     </div>
@@ -19,20 +19,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9 col-sm-12 main-content">
-          {% for i in articles.items %}
-          <div class="post">
+					<div class="post">
             <a href="#" class="featured "></a>
             <center>
-              <h2 ><a href="/article/{{i.Id}}">{{i.Title}}</a></h2>
-              <small >From:Gru {{i.SubTime}}</small>
+              <h2 ><a href="/">简介</a></h2>
+              <small >From:Gru 2016-4-27</small>
             </center>
-            <p>
-              {{i.Digest}}
-            </p>
             <hr>
-            Tag:{{i.Tag}}
+            <p>
+              <h2><font color="#418caf">自我介绍</font></h2><hr><p>重庆大学计科学生，主要学习Python,会一点web开发，使用flask框架，正在学习使用Python进行数据分析，以及fpga的简单开发。<br></p><h2><font color="#418caf">博客介绍</font></h2><hr><p>学习个人博客<font color="#418caf">Tony博客</font><br></p><p>博客基于</p><blockquote><p>python2.7+flask+mysql</p><p>bootstrap3</p><p>gunicorn+nginx</p></blockquote>
+            </p>
           </div>
-        {% endfor %}
       </div>
         <div class="col-md-3 visible-lg visible-md">
           <div class="user-info">
@@ -55,8 +52,8 @@
       </div>
     </div>
   </div>
-  <div class="m-footer" >
-  <h3 >Gru's Blog</h3>
-    &copy; Copyright 2016 by <a href="http://imgru.site">Gru</a>
-  </div>
+	<div class="m-footer" >
+	<h3 >Gru's Blog</h3>
+		&copy; Copyright 2016 by <a href="http://imgru.site">Gru</a>
+	</div>
 {% endblock %}

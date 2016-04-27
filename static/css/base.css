@@ -1,0 +1,13 @@
+.m-footer{
+	position:relative;
+	text-align:center;
+	width:100%;
+	background-color: #373f48;
+	margin-top:80px;
+	height:100px;
+	color: white;
+}
+
+.m-footer h3{
+	padding-top: 20px;
+}

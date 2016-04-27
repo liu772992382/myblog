@@ -11,6 +11,12 @@ app = Flask(__name__)
 app.config.from_object(Config)
 db = SQLAlchemy(app)
 
+class User(db.Model):
+    __tablename__ = 'User'
+    Id = db.Column(db.Integer,primary_key=True)
+    Username = db.Column(db.String(50))
+    Passwd = db.Column(db.String(20))
+
 class Article(db.Model):
     __tablename__ = 'Article'
     Id = db.Column(db.Integer, primary_key=True)
@@ -18,3 +24,4 @@ class Article(db.Model):
     Tag = db.Column(db.String(50))
     Content = db.Column(db.String(10000))
     SubTime = db.Column(db.String(50))
+    Digest = db.Column(db.String(200))
