@@ -14,7 +14,7 @@ atiLength=len(Article.query.all())
 @app.route('/<int:page>',methods=['GET'])
 def hello_world(page = 1):
 	atiLength=len(Article.query.all())
-	paginate = Article.query.order_by(Article.Id.desc()).paginate(page, 5, False)
+	paginate = Article.query.all()
 	return render_template('welcome.html', title="Welcome",articles=paginate,Length=atiLength)
 
 @app.route('/article',methods=['GET'])
@@ -56,7 +56,7 @@ def login(Warnings=''):
 			session['admin']=p.Username
 			return redirect('/edit')
 		else:
-			return render_template('login.htlm',Warnings=u'账号或密码错误')
+			return render_template('login.html',Warnings=u'账号或密码错误')
 
 @app.route('/about',methods=['GET'])
 def about():

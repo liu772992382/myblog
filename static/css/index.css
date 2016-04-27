@@ -24,7 +24,7 @@ div.nav a{
 }
 
 
-.nav>li>a:focus, .nav>li>a:hover{
+.nav-pills>li>a:focus, .nav-pills>li>a:hover{
 	background-color: rgb(234, 10, 29) !important;
 }
 
@@ -159,4 +159,74 @@ div.post .featured {
     text-align: center;
     box-shadow: 0px 1px 2px #aaa;
     margin-top: 12px;
+}
+
+
+
+.sidebar {
+    margin-bottom: 0;
+}
+.sidebar-content {
+    padding: 20px;
+    padding-top: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 4px #aaa;
+}
+
+.nav-sidebar {
+    margin-bottom: 0;
+}
+.nav-sidebar > li > a {
+    padding: 7px 10px;
+    color: #817c7c;
+    font-size: 16px;
+    border-bottom: 1px #ddd solid;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #ea6753;
+}
+
+div .sidebar h5 {
+    margin-bottom:5px;
+    padding: 10px 0 10px 0;
+    font-size: 17px;
+    color: #31a3cb;
+    border-bottom: 3px #ccc solid;
+}
+div .sidebar h5.info {
+    padding-top:0;
+}
+div .sidebar sup {
+    padding-left: 5px;
+    top:-8px;
+}
+div .sidebar form {
+    width: 100%;
+    margin: 7px 0 15px 0;
+}
+div .sidebar #search {
+    width: 60%;
+    display: inline-block;
+    height: 30px;
+}
+div .sidebar button {
+    width: 35%;
+    float: right;
+    font-size: 14px;
+}
+
+.red-btn {
+    display: inline-block;
+    background: #f4645f;
+    color: #fafafa;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: none;
+}
+.red-btn:hover {
+    background: #555;
+    color: #fafafa;
 }
