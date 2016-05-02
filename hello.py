@@ -8,19 +8,22 @@ from flask import Flask, request, render_template,redirect,make_response,flash,s
 from time import *
 
 
-atiLength=len(Article.query.all())
+
 
 @app.route('/',methods=['GET'])
 @app.route('/<int:page>',methods=['GET'])
 def hello_world(page = 1):
 	atiLength=len(Article.query.all())
 	paginate = Article.query.all()
+	atiLength=len(Article.query.all())
 	return render_template('welcome.html', title="Welcome",articles=paginate,Length=atiLength)
 
 @app.route('/article',methods=['GET'])
 @app.route('/article/<int:id0>',methods=['GET'])
 def article(id0=1):
 	article0=Article.query.filter(Article.Id==id0).all()[0]
+	atiLength=len(Article.query.all())
+	print atiLength
 	return render_template('article.html',article=article0,Length=atiLength)
 
 @app.route('/edit',methods=['GET','POST'])
@@ -60,6 +63,7 @@ def login(Warnings=''):
 
 @app.route('/about',methods=['GET'])
 def about():
+	atiLength=len(Article.query.all())
 	return render_template('about.html',Length=atiLength)
 
 if __name__ == '__main__':
