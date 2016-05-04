@@ -23,7 +23,6 @@ def hello_world(page = 1):
 def article(id0=1):
 	article0=Article.query.filter(Article.Id==id0).all()[0]
 	atiLength=len(Article.query.all())
-	print atiLength
 	return render_template('article.html',article=article0,Length=atiLength)
 
 @app.route('/edit',methods=['GET','POST'])
@@ -35,7 +34,6 @@ def edit():
 		return render_template('edit.html',title="edit")
 	elif request.method=='POST':
 		form = request.form
-		print form
 		t=localtime()
 		g.article=Article()
 		g.article.Title=form['Title']
