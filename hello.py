@@ -2,7 +2,7 @@
 #coding=utf-8
 from flask import *
 from werkzeug.utils import secure_filename
-from flask.ext.sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy
 from model import *
 from flask import Flask, request, render_template,redirect,make_response,flash,session,g,url_for
 from time import *
@@ -65,4 +65,4 @@ def about():
 	return render_template('about.html',Length=atiLength)
 
 if __name__ == '__main__':
-    app.run(debug=True,port=8000)
+    app.run(debug=True, port=8000, host = '0.0.0.0')
